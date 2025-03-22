@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build project",
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/src/MyAssembler.cpp",
+                "${workspaceFolder}/src/Parser.cpp",
+                "${workspaceFolder}/src/SymbolTable.cpp",
+                "-I${workspaceFolder}/include",
+                "-o",
+                "${workspaceFolder}/bin/MyAssembler.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
